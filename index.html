@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <title>Animation</title>
+
+    <style>
+        #animation{
+            width: 58px;
+            height: 87px;
+            background-image: url('./img/ciclo-animacao.png');
+            animation: ciclo-animation 1s steps(8) infinite;
+            -webkit-animation: ciclo-animation 1s steps(8) infinite;
+        }
+
+
+        @-webkit-keyframes ciclo-animation{
+            from{ background-position: 0px;}
+            to{ background-position: -464px;}
+        }
+        @keyframes ciclo-animation{
+            from{ background-position: 0px;}
+            to{ background-position: -464px;}
+        }
+
+
+        #robo_andando{
+            width: 90px;
+            height: 134px;
+            background-image: url('./img/robo.png');
+            background-position-y: -133px;
+            animation: robo-andando 1s steps(3) infinite;
+            -webkit-animation: robo-andando 1s steps(3) infinite;
+        }
+
+        @-webkit-keyframes robo-andando{
+            from{ background-position-x: -220px;}
+            to{ background-position-x: -525px;}
+        }
+        @keyframes robo-andando{
+            from{ background-position-x: -220px;}
+            to{ background-position-x: -525px;}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="animation"></div>
+    <div id="robo_andando"></div>
+</body>
+</html>
