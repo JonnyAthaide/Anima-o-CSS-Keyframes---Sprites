@@ -1,0 +1,17 @@
+#animacao{
+    width: 58px;
+    height: 87px;
+    background-image: url('../img/ciclo-animacao.png');
+    animation: ciclo-animacao 1s steps(8) infinite;
+    -webkit-animation: ciclo-animacao 1s steps(8) infinite; 
+}
+
+
+@-webkit-keyframes ciclo-animacao{
+    from{ background-position: 0px;}
+    to{ background-position: -464px;}
+}
+@keyframes ciclo-animacao{
+    from{ background-position: 0px;}
+    to{ background-position: -464px;}
+}
